@@ -1,6 +1,5 @@
 package org.example;
 
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -27,7 +26,7 @@ class CalculatorTest {
         int creditAmount = 300_000;
         int month = 18;
         double percent = 15.0;
-        double expected = 18715.44;
+        double expected = 18715.0;
         double result = calc.monthlyPayment(creditAmount,month,percent);
         assertEquals(expected,result);
     }
@@ -37,7 +36,7 @@ class CalculatorTest {
         int creditAmount = 300_000;
         int month = 18;
         double percent = 15.0;
-        double expected = 336877.92;
+        double expected = 336878.0;
         double result = calc.totalAmount(creditAmount,month,percent);
         assertEquals(expected,result);
     }
@@ -47,7 +46,7 @@ class CalculatorTest {
         int creditAmount = 300_000;
         int month = 18;
         double percent = 15.0;
-        double expected = 36877.92;
+        double expected = 36878.0;
         double result = calc.totalOverpayment(creditAmount,month,percent);
         assertEquals(expected,result);
     }
